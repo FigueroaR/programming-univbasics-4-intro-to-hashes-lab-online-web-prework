@@ -30,6 +30,7 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
+<<<<<<< HEAD
   if hash[key]
     hash[key] += 1
   else
@@ -37,6 +38,14 @@ def update_counting_hash(hash, key)
   end
   return hash
 end
+=======
+  
+  if hash[key] <0 
+    hash[key] =1 
+  else
+    hash[key] += 1
+  end
+>>>>>>> 17557c8d15f1281e2afc893e45b6397b5cf9f28d
   # given a hash an a key as parameters, return an updated hash
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
